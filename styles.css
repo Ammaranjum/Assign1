@@ -1,0 +1,232 @@
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #fffaf0;
+            color: #5a3e36;
+        }
+
+        .nav-bar {
+            background: #ff69b4;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+        }
+
+        .nav-bar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .menu-items li, .social-icons li {
+            margin: 0 15px;
+            cursor: pointer;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .menu-items li:hover, .social-icons li:hover {
+            color: #ffefd5;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 2rem;
+            background: #ffe4e1;
+        }
+
+        .hero-section .intro h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem;
+        }
+
+        .hero-section .intro p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-section button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background: #ff1493;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero-section button:hover {
+            background: #c71585;
+        }
+
+        .menu-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: #fff8dc;
+        }
+
+        .menu-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .menu-items .item {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .menu-items .item img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background: #ff69b4;
+            padding: 2rem 1rem;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-logo h2 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffefd5;
+        }
+
+        .footer-social .social-icons i {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .footer-social .social-icons i:hover {
+            color: #ffefd5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li class="logo"><strong>Sweet Delight</strong></li>
+                <div class="menu-items">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Gallery</li>
+                    <li>Contact</li>
+                </div>
+                <div class="social-icons">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="intro">
+                <h1>Delicious Donuts, Made with Love</h1>
+                <p>Indulge in the sweetest treats in town! At Sweet Delight, we craft every donut to perfection, bringing joy with every bite.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="image">
+                <img src="donut-hero.jpg" alt="Delicious Donuts">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="glazed-donut.jpg" alt="Glazed Donut">
+                    <h3>Classic Glazed</h3>
+                </div>
+                <div class="item">
+                    <img src="chocolate-donut.jpg" alt="Chocolate Donut">
+                    <h3>Chocolate Bliss</h3>
+                </div>
+                <div class="item">
+                    <img src="strawberry-donut.jpg" alt="Strawberry Donut">
+                    <h3>Strawberry Dream</h3>
+                </div>
+                <div class="item">
+                    <img src="sprinkle-donut.jpg" alt="Sprinkle Donut">
+                    <h3>Rainbow Sprinkle</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Sweet Delight</h2>
+                <p>Bringing Sweetness to Your Day!</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
